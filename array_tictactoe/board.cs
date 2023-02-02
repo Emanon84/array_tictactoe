@@ -94,8 +94,8 @@ namespace array_tictactoe
             int counterX = 0;
             int counterO = 0;
 
-            Console.WriteLine("Checking left to right");
-            //vertical left to right
+            //Console.WriteLine("Checking left to right");
+            //Diagonal left to right
             for(int i = 0; i< board.GetLength(0); i++)
             {
                 for(int j = 0; j<board.GetLength(1); j++)
@@ -121,10 +121,10 @@ namespace array_tictactoe
                 }
             }
 
-            //vertical right to left
+            //Diagonal right to left
             counterX = 0;
             counterO = 0;
-            Console.WriteLine("Checking right to left");
+            //Console.WriteLine("Checking right to left");
 
             for (int i = 0, j = 2; i < board.GetLength(0); i++, j--)
             {
@@ -145,7 +145,8 @@ namespace array_tictactoe
 
             }
 
-            Console.WriteLine("Checking rows");
+            // Rows
+            //Console.WriteLine("Checking rows");
             counterX = 0;
             counterO = 0;
 
@@ -183,8 +184,8 @@ namespace array_tictactoe
                 }
             }
 
-
-            Console.WriteLine("Checking columns");
+            //Columns
+            //Console.WriteLine("Checking columns");
             counterX = 0;
             counterO = 0;
 
@@ -252,11 +253,7 @@ namespace array_tictactoe
                 {
                     return true;
                 }
-
-
             }
-
-
             return false;
         }
 
